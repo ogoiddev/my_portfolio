@@ -1,3 +1,4 @@
+import { HTMLAttributes } from 'react';
 import styled, { StyledComponent } from 'styled-components';
 
 export const AppContainer = styled.div`
@@ -11,7 +12,7 @@ interface Props {
   }
 }
 
-export const Cursor = styled.div.attrs<Props>(props => ({
+export const Cursor: StyledComponent<"div", any, Props, never> = styled.div.attrs<Props>(props => ({
   style: {
     left: (props.locate.x - 20) + 'px',
     top: (props.locate.y - 20) + 'px',
