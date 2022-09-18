@@ -12,8 +12,10 @@ export default function About() {
           Adoro tocar violão e apreciar comidas e bebidas especiais.
 
         </span>
+
       </article>
       
+      <img src="/SITE-EM-CONSTRUCAO.gif" alt="site em construção" />
       {/* <img src="" alt="Foto Perfil de Diogo" /> */}
     </AboutContainer>
   );

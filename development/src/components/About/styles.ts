@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   width: 100%;
   height: 100vh;
 
@@ -10,7 +11,7 @@ export const AboutContainer = styled.div`
   article {
     min-width: 500px;
     max-width: 600px;
-    margin-left: 270px;
+    
     text-align: inherit;
     padding: 30px;
     border-radius: 8px;
@@ -55,8 +56,10 @@ export const AboutContainer = styled.div`
 
 
   img {
-    max-height: 300px;
+    max-height: 400px;
     width: fit-content;
+    border-radius: 16px;
+    opacity: 0.5;
 
   }
 `

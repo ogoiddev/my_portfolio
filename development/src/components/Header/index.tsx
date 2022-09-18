@@ -19,9 +19,11 @@ export default function Header() {
             : <Moon size={32} weight="fill" color={ dark.COLORS.BLUE_LIGHT } /> }
         </div>
 
+        <a className='resume' href="Diogo_Martini_resume.pdf" target="_blank" download>Estou em busca de oportunidade de trabalho - Clique aqui para ver meu CURRÍCULO</a>
+
         <div className='nav'> 
           <Navbar/>
-          <img src="/favicon_do_panta.png" alt="" />
+          <img src="/favicon_do_panta.png" alt="Meu currículo" />
         </div>
       </HeaderContainer>
   );
