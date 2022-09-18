@@ -55,11 +55,21 @@ export const AboutContainer = styled.div`
 
 
 
-  img {
-    max-height: 400px;
+  .gifs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+
+      max-height: 300px;
+    }
     width: fit-content;
     border-radius: 16px;
     opacity: 0.5;
 
+    .esteira {
+      width: 300px;
+    }
   }
 `
