@@ -4,14 +4,15 @@ export const AboutContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   width: 100%;
   height: 100vh;
 
   
   article {
-    min-width: 500px;
+    min-width: 460px;
     max-width: 600px;
-    
+    margin: 0 10%;
     text-align: inherit;
     padding: 30px;
     border-radius: 8px;

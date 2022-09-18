@@ -6,7 +6,7 @@ export const HomeContainer = styled.div`
     ${ ({theme}) => theme.COLORS.LINEAR_2 } 30%, 
     ${ ({theme}) => theme.COLORS.LINEAR_3 } 70%,
     ${ ({theme}) => theme.COLORS.LINEAR_4 } 100%);
-  transition: all 0.15s ease-out;
+  
   display: flex;
   flex-direction: column;
 
