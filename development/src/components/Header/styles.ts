@@ -6,16 +6,23 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   z-index: 999;
 
-  :hover {
-    opacity: 111;
-  }
-
   position: fixed;
   top: 0;
   min-height: 75px;
   width: 100%;
   background-color: ${ props => props.theme.COLORS.HEADER };
   opacity: 0.9;
+
+  box-shadow: 4px 0 12px ${ props => props.theme.COLORS.GRAY };;
+
+  :hover {
+    opacity: 111;
+  }
+  @media (max-width: 820px) {
+    background-color: ${ props => props.theme.COLORS.GRAY };
+    opacity: 1;
+  }
+
 
   img {
     height: 32px;
