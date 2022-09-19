@@ -89,7 +89,7 @@ export const RadioItem = styled(DropdownMenu.RadioItem)`
 `
 
 export const Content = styled(DropdownMenu.Content)`
-  background: ${ ({theme}) => theme.COLORS.HEADER };
+  background: ${ ({theme}) => theme.COLORS.GRAY };
   
   min-width: 70%;
   max-width: fit-content;
