@@ -21,7 +21,7 @@ export default function App() {
 
   const handleMoveMouse = (event: MouseEvent) => {
     event.preventDefault();
-    setLocate({x: event.pageX, y: event.pageY})
+    setLocate({x: event.clientX, y: event.clientY})
   };
 
   return (
