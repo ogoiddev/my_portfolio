@@ -25,4 +25,9 @@ export const HomeContainer = styled.div`
       padding: 100px 0 10%;
     }
     
+  @media (max-height: 820px) {
+    height: fit-content;
+    padding: 100px 0 10%;
+  }
+    
 `

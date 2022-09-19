@@ -12,7 +12,7 @@ export const FooterContainer = styled.div`
   background-color: ${ props => props.theme.COLORS.HEADER };
   z-index: 88;
 
-  @media (max-width: 620px) {
+  @media (max-width: 820px) {
     position: relative;
   
     ::after {

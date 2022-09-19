@@ -29,7 +29,7 @@ export const Cursor: StyledComponent<"div", any, Props, never> = styled.div.attr
   background: #70aca812;
   box-shadow: 0 0 150px #bdf6ff;
 
-  @media (max-width: 680px) {
+  @media (max-width: 820px) {
     display: none;
   }
 `;
