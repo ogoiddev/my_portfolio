@@ -15,7 +15,7 @@ export default function About() {
 
       </article>
       
-      <div className="gifs">
+      <div className="gif">
         <img className="esteira" src="/001.gif" alt="site em construção" />
         <img src="/SITE-EM-CONSTRUCAO.gif" alt="site em construção" />
       </div>

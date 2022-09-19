@@ -21,7 +21,7 @@ export default function Header() {
         </div>
 
 
-        <div className='nav'> 
+        <div className='nav-side'> 
           <DropMenu/>
           <Navbar/>
           <img src="/favicon_do_panta.png" alt="Meu currículo" />

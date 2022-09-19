@@ -1,5 +1,5 @@
 import About from "../About";
-import ArrowAnime from "../ArrowAnime";
+import ArrowLinkDown from "../ArrowLinkDown";
 import Header from "../Header";
 import { HomeContainer } from "./styles";
 
@@ -9,7 +9,12 @@ export function Hall() {
     <HomeContainer id='hall'>
       <Header/>
       <About/>
-      <ArrowAnime/>
+      
+      <div className="arrow-hall-position">
+        <a href='#projects'>
+          <ArrowLinkDown/>
+        </a>
+      </div>
     </HomeContainer> 
   );
 }

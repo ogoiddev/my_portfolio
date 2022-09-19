@@ -26,6 +26,8 @@ export const NavbarContainer = styled.div`
     font-size: 1.2rem;
     font-weight: 600;
 
+    inline-size: auto;
+
     position: relative;
     
     :after {

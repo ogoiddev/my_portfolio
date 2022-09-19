@@ -19,13 +19,15 @@ export const HeaderContainer = styled.div`
 
   img {
     height: 32px;
-    margin-right: 30px;
+    width: 32px;
   }
-
-  .nav {
+  
+  .nav-side {
     display: flex;
     gap: 30px;
     align-items: center;
+    width: fit-content;
+    padding-right: 28px;
   }
 
   .theme {

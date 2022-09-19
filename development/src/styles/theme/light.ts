@@ -28,7 +28,7 @@ export default {
     BLUE_LIGHT: '#00d0ff',//
     GRAY_LIGHT: '#e7e9ea',//
 
-    ARROW: '#2d3239',
+    ARROW: '#ff051e',
 
     LINEAR_1: '#daffef',
     LINEAR_2: '#c4ffde',

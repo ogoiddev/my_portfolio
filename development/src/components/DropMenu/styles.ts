@@ -23,7 +23,6 @@ export const IconButton = styled('button')`
 
 export const MenuContainer = styled.div`
   display: none;
-
   @media (max-width: 820px) {
     display: block;
   }
@@ -41,6 +40,7 @@ export const Portal = styled(DropdownMenu.Portal)`
 `
 
 export const Label = styled(DropdownMenu.Label)`
+  width: fit-content;
   color: ${ ({theme}) => theme.COLORS.BLUE_LIGHT };
   font-size: 1.4rem;
   line-height: 1.4;
@@ -53,19 +53,21 @@ export const Item = styled(DropdownMenu.Item)`
   font-size: 1.2rem;
   display: flex;
   align-items: center;
+  width: 250px;
+  max-width: 300px;
   color: ${ ({theme}) => theme.COLORS.ARTICLE_TEXT };
   border: 1px solid ${ ({theme}) => theme.COLORS.BLUE_LIGHT };  
   border-radius: 4px;
   padding: 4px 16px;
-  margin: 24px 8px;
-  position: relative;
+  margin: 24px 0;
+  
 
-  user-select: none;
+
 `
 
 export const Group = styled(DropdownMenu.Group)`
-  a {
-
+  .link-a {
+    width: fit-content;
     appearance: none;
     text-decoration: none;
   }
@@ -82,56 +84,54 @@ export const RadioGroup = styled(DropdownMenu.RadioGroup)`
 
 `
 
+export const RadioItem = styled(DropdownMenu.RadioItem)`
+  font-size: 2rem;
+`
 
 export const Content = styled(DropdownMenu.Content)`
-  min-width: 220;
-  margin-right: 68px;
+  background: ${ ({theme}) => theme.COLORS.HEADER };
   
-  background: linear-gradient(135deg, 
-    ${ ({theme}) => theme.COLORS.ARTICLE_1 } 0%, 
-    ${ ({theme}) => theme.COLORS.ARTICLE_2 } 66%, 
-    ${ ({theme}) => theme.COLORS.ARTICLE_3 } 100%);
+  min-width: 70%;
+  max-width: fit-content;
+  padding: 16px;
   
+  margin: 45px 45px auto auto;
   border-radius: 4px;
-  padding: 8px;
-  box-shadow:
-    0px 10px 38px -10px rgba(22, 23, 24, 0.35), 
-    0px 10px 20px -15px rgba(22, 23, 24, 0.2);
   
-  @media (prefers-reduced-motion: no-preference) {
-    animationDuration: 400ms;
-    animationTimingFunction: cubic-bezier(0.16, 1, 0.3, 1);
-    willChange: transform opacity;
-    &[data-state="open"] {
-      &[data-side= top ] { animation-name: slideDownAndFade };
-      &[data-side= right ] { animation-name: slideLeftAndFade };
-      &[data-side= bottom ] { animation-name: slideUpAndFade };
-      &[data-side= left ] { animation-name: slideRightAndFade };
-    }
-  }
-
+  animation-duration: 400ms;
+  animation-name: slideDownAndFade;
+  animation-name: slideLeftAndFade;
+  animation-name: slideUpAndFade;
+  animation-name: slideRightAndFade;
   @keyframes slideUpAndFade {
     0% { opacity: 0, transform translateY(2px) }
     100% { opacity: 1, transform translateY(0) }
-}
-
+  }
   @keyframes slideRightAndFade {
       0% { opacity: 0, transform translateX(-2px) }
       100% { opacity: 1, transform translateX(0) }
   }
-
   @keyframes slideDownAndFade {
       0% { opacity: 0, transform translateY(-2px) }
       100% { opacity: 1, transform translateY(0) }
   }
-
   @keyframes slideLeftAndFade {
       0% { opacity: 0, transform translateX(2px) }
       100% { opacity: 1, transform translateX(0) }
   }
   
+  .resume {
+    display: none;
+  }
+
+  .resume {
+      
+    @media (max-width: 820px) {
+      display: block;
+
+      
+      
+    }
+  }
 `
 
-export const RadioItem = styled(DropdownMenu.RadioItem)`
-  font-size: 2rem;
-`

@@ -6,13 +6,14 @@ export const AboutContainer = styled.div`
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
+
+
 
   
   article {
-    min-width: 360px;
+    min-width: 450px;
     max-width: 600px;
-    margin: 0 10%;
+    margin: 0 10% 10% 0;
     text-align: inherit;
     padding: 30px;
     border-radius: 8px;
@@ -55,17 +56,20 @@ export const AboutContainer = styled.div`
       inline-size: auto;
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 820px) {
       inline-size: min-content;
-      width: 90%;
+      min-width: 90%;
       margin: 0;
+      
     }
     
   }
 
 
 
-  .gifs {
+
+
+  .gif {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,6 +79,8 @@ export const AboutContainer = styled.div`
       max-height: 300px;
     }
     width: fit-content;
+    max-width: 80%;
+    margin: 60px 0;
     border-radius: 16px;
     opacity: 0.5;
 

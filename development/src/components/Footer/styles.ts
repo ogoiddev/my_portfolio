@@ -12,6 +12,12 @@ export const FooterContainer = styled.div`
   background-color: ${ props => props.theme.COLORS.HEADER };
   z-index: 88;
 
+  @media (max-width: 620px) {
+      position: sticky;
+      
+      
+    }
+
   .resume {
       z-index: 89;
       display: flex;
@@ -56,6 +62,11 @@ export const FooterContainer = styled.div`
       transform: translate(1px, 1px);
       border-radius: 4px;
       background: ${props => props.theme.COLORS.BLUE_LIGHT}10;
+    }
+    @media (max-width: 820px) {
+      display: none;
+      
+      
     }
   }
 `

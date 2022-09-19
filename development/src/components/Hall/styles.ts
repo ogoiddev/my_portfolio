@@ -14,5 +14,15 @@ export const HomeContainer = styled.div`
   width: 100%;
   padding-top: 150px;
 
+  .arrow-hall-position {
+    position: absolute;
+    bottom: 160px;
+    left: 30px;
+  }
+
+  @media (max-width: 820px) {
+      height: fit-content;
+      padding: 100px 0 10%;
+    }
     
 `

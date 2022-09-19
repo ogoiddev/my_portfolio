@@ -14,4 +14,11 @@ export const MyCodeContainer = styled.div`
   height: 100vh;
   width: 100%;
   padding-top: 150px;
+  position: relative;
+
+  .arrow-code-position {
+    position: absolute;
+    bottom: 160px;
+    left: 30px;
+  }
 `

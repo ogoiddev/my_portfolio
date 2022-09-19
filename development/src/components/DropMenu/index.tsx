@@ -17,24 +17,29 @@ export default () => (
         <Label>Links</Label>
 
         <Group >
-          <a href='#hall'>
+          <a href='#hall'  className='link-a'>
             <Item onSelect={(e) => e.preventDefault()}>
               Esse sou eu
             </Item>
           </a>
-          <a href='#projects'>
+          <a href='#projects' className='link-a'>
             <Item onSelect={(e) => e.preventDefault()}>
               Projects
             </Item>
           </a>
-          <a href='#code'>
+          <a href='#code' className='link-a'>
             <Item onSelect={(e) => e.preventDefault()}>
               My Code
             </Item>
           </a>
-          <a href='#code'>
+          <a href='#code' className='link-a'>
             <Item onSelect={(e) => e.preventDefault()}>
               Como posso ajudar?
+            </Item>
+          </a>
+          <a href="Diogo_Martini_resume.pdf" target="_blank" download className='link-a resume'>
+            <Item onSelect={(e) => e.preventDefault()}>
+              CURRÍCULO
             </Item>
           </a>
         </Group>
