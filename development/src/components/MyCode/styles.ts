@@ -1,6 +1,7 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-export const HomeContainer = styled.div`
+
+export const MyCodeContainer = styled.div`
   background: radial-gradient(circle, 
     ${ ({theme}) => theme.COLORS.LINEAR_1 } 0%, 
     ${ ({theme}) => theme.COLORS.LINEAR_2 } 30%, 
@@ -12,6 +13,5 @@ export const HomeContainer = styled.div`
 
   height: 100vh;
   width: 100%;
-
-    
+  padding-top: 150px;
 `

@@ -5,7 +5,7 @@ export default function About() {
     <AboutContainer>
       <article>
         <h1>Diogo Martini Pantaleão</h1>
-        <h2>{'WEB <Developer />'}</h2>
+        <h2>{'WEB <Developer/>'}</h2>
         <span>
           Um profissional transparente, honesto, justo e comprometido. 
           Sempre a disposição para solucionar problemas.

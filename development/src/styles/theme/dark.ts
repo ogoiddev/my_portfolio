@@ -28,9 +28,11 @@ export default {
     BLUE_LIGHT: '#00d0ff',
     GRAY_LIGHT: '#e7e9ea',
 
+    ARROW: '#00d0ff',
+
     LINEAR_1: '#120b20',
-    LINEAR_2: '#200d2f',
-    LINEAR_3: '#181724',
+    LINEAR_2: '#1a0a27',
+    LINEAR_3: '#10061a',
     LINEAR_4: '#2f091b',
   }
 };

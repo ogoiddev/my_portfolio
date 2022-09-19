@@ -5,9 +5,13 @@ import light from './styles/theme/light';
 
 import { MouseEvent, useContext, useState } from 'react';
 import GlobalStyle from '../src/styles/global';
-import { Cursor } from './AppStyles';
+import { AppContainer, Cursor } from './AppStyles';
 import { UserThemeContext } from './context/UserThemeContext';
-import { Home } from './pages/Home';
+
+import Footer from './components/Footer';
+import Projects from './components/Projects';
+import { Hall } from './components/Hall';
+import MyCode from './components/MyCode';
 
 
 export default function App() {
@@ -23,14 +27,19 @@ export default function App() {
   return (
     <ThemeProvider theme={ theme ?  dark : light }>
       
-        <div onMouseMove={(e) => handleMoveMouse(e)}>
+        <AppContainer onMouseMove={(e) => handleMoveMouse(e)}>
         <Cursor locate={locate}/>
 
-          <Home/>
+          <Hall/>
 
           <GlobalStyle/>
 
-        </div>
+          <Projects/>
+          <MyCode/>
+          
+          <Footer/>
+
+        </AppContainer>
       
     </ThemeProvider>
   )

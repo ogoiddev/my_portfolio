@@ -1,7 +1,9 @@
-import { HTMLAttributes } from 'react';
 import styled, { StyledComponent } from 'styled-components';
 
 export const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
   
 `;
 
@@ -26,5 +28,9 @@ export const Cursor: StyledComponent<"div", any, Props, never> = styled.div.attr
   pointer-events: none;
   background: #70aca812;
   box-shadow: 0 0 150px #bdf6ff;
+
+  @media (max-width: 680px) {
+    display: none;
+  }
 `;
 

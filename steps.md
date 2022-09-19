@@ -26,6 +26,12 @@ $ npm install typescript-plugin-styled-components --dev
 $ @types/styled-components
 ```
 
+#### [Radix - Drop menu](https://www.radix-ui.com/docs/primitives/components/dropdown-menu)
+```
+$ npm install @radix-ui/react-dropdown-menu
+```
+
+
 
 
 

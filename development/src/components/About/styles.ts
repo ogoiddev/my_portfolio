@@ -10,12 +10,14 @@ export const AboutContainer = styled.div`
 
   
   article {
-    min-width: 460px;
+    min-width: 360px;
     max-width: 600px;
     margin: 0 10%;
     text-align: inherit;
     padding: 30px;
     border-radius: 8px;
+    transition: all 1s;
+    
     
     background: linear-gradient(135deg, 
       ${ ({theme}) => theme.COLORS.ARTICLE_1 } 0%, 
@@ -49,7 +51,14 @@ export const AboutContainer = styled.div`
       font-size: 2.6rem;
       color: ${ props => props.theme.COLORS.BLUE_LIGHT };
       margin: 16px 0;
-  
+      flex: 1;
+      inline-size: auto;
+    }
+
+    @media (max-width: 450px) {
+      inline-size: min-content;
+      width: 90%;
+      margin: 0;
     }
     
   }

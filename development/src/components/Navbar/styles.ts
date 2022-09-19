@@ -9,6 +9,11 @@ export const NavbarContainer = styled.div`
   height: 80%;
   
   
+  @media (max-width: 820px) {
+    display: none;
+    
+  }
+  
   a {
     display: flex;
     align-items: center;

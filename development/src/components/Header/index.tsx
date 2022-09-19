@@ -7,6 +7,7 @@ import light from '../../styles/theme/light';
 import { UserThemeContext } from '../../context/UserThemeContext';
 import { useContext } from 'react';
 import Navbar from '../Navbar';
+import DropMenu from '../DropMenu';
 
 export default function Header() {
   const { theme, setTheme } = useContext(UserThemeContext);
@@ -19,9 +20,9 @@ export default function Header() {
             : <Moon size={32} weight="fill" color={ dark.COLORS.BLUE_LIGHT } /> }
         </div>
 
-        <a className='resume' href="Diogo_Martini_resume.pdf" target="_blank" download>Estou em busca de oportunidade de trabalho - Clique aqui para ver meu CURRÍCULO</a>
 
         <div className='nav'> 
+          <DropMenu/>
           <Navbar/>
           <img src="/favicon_do_panta.png" alt="Meu currículo" />
         </div>
