@@ -6,9 +6,6 @@ export const AboutContainer = styled.div`
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
-
-
-
   
   article {
     min-width: 450px;
@@ -74,18 +71,15 @@ export const AboutContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    img {
 
-      max-height: 300px;
+    img {
+      max-width: 80%;
     }
+
     width: fit-content;
-    max-width: 80%;
+    
     margin: 60px 0;
     border-radius: 16px;
     opacity: 0.5;
-
-    .esteira {
-      width: 300px;
-    }
   }
 `
