@@ -5,7 +5,8 @@ export const AboutContainer = styled.div`
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
+  
   
   article {
     min-width: 450px;
@@ -15,8 +16,7 @@ export const AboutContainer = styled.div`
     padding: 30px;
     border-radius: 8px;
     transition: all 1s;
-    align-self: flex-start;
-    margin-left: -300px;
+
     
     background: linear-gradient(135deg, 
       ${ ({theme}) => theme.COLORS.ARTICLE_1 } 0%, 
