@@ -1,3 +1,18 @@
+
+# Checkout my Portfolio
+
+* link => [PORTFOLIO](https://ogoiddev.vercel.app)
+
+
+# To run the project, clone the repository and run commands below
+```
+$ npm i
+```
+```
+$ npm run dev
+```
+
+
 # Steps to build my Portfolio
 
 ## [Vite](https://vitejs.dev/guide/)
