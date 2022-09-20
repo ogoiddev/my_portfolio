@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 
 export const ProjectsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
 
@@ -9,7 +12,7 @@ export const ProjectsContainer = styled.div`
   position: relative;
 
   .arrow-projects-position {
-    position: relative;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,4 +25,12 @@ export const ProjectsContainer = styled.div`
 
   }
 
+  .carousel {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `
