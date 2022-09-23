@@ -2,14 +2,18 @@ import styled from 'styled-components';
 
 
 const CarouselContainer = styled.div`
+  .carousel {
+    justify-content: space-between !important;
+    width: 75%;
+  }
   .embla {
     position: relative;
     background-color: transparent;
-    padding: 40px;
+    
     
     
     height: 80%;
-    width: 90%;
+    width: 85%;
     
   }
 
@@ -44,9 +48,11 @@ const CarouselContainer = styled.div`
   }
   
   .embla__slide__inner {
-    height: 540px;
+    height: 615px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
     
     :hover {
       transform: translate(-1px, -1px);
