@@ -14,15 +14,19 @@ export const MyCodeContainer = styled.div`
   .codes {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 32px;
     flex-wrap: nowrap;
-    gap: 90px;
+    
     width: 90vw;
+    position: relative;
   
-    img {
-      height: min-content;
-      max-width: max-content;
+    img:first-child {
+      width: 50%;     
       
+    }
+    img:nth-child(2) {
+      width: 35%;     
       
     }
   }
