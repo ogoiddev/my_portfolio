@@ -10,6 +10,11 @@ export default function MyCode() {
           <ArrowLinkUp/>
         </a>
       </div>
+
+      <div className="codes">
+        <img src="/code_context.png" alt="context code" />
+        <img src="/code_carousel_css.png" alt="carousel css code" />
+      </div>
     </MyCodeContainer>
   );
 }

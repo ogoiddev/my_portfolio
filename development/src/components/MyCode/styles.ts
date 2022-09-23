@@ -9,12 +9,30 @@ export const MyCodeContainer = styled.div`
     ${ ({theme}) => theme.COLORS.LINEAR_4 } 100%);
   
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+
+  .codes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 90px;
+    width: 90vw;
+  
+    img {
+      height: min-content;
+      max-width: max-content;
+      
+      
+    }
+  }
 
   height: 100vh;
   width: 100%;
   padding-top: 150px;
   position: relative;
+
+
 
   .arrow-code-position {
     position: absolute;

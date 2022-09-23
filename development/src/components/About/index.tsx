@@ -7,10 +7,9 @@ export default function About() {
         <h1>Diogo Martini Pantaleão</h1>
         <h2>{'WEB <Developer/>'}</h2>
         <span>
-          Um profissional transparente, honesto, justo e comprometido. 
-          Sempre a disposição para solucionar problemas.
-          Adoro tocar violão e apreciar comidas e bebidas especiais.
-
+          Desenvolvimento focado no objetivo e na necessidade do cliente,
+          com um código claro, seguro e de fácil manutenção.
+          O sucesso resulta de um código constantemente monitorado com qualidade.
         </span>
 
       </article>

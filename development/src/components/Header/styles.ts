@@ -16,8 +16,11 @@ export const HeaderContainer = styled.div`
   box-shadow: 4px 0 12px ${ props => props.theme.COLORS.GRAY };;
 
   :hover {
-    opacity: 111;
+    background-color: ${ props => props.theme.COLORS.GRAY };
+    opacity: 1;
   }
+
+  
   @media (max-width: 820px) {
     background-color: ${ props => props.theme.COLORS.GRAY };
     opacity: 1;
