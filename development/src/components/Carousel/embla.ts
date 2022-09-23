@@ -12,7 +12,7 @@ const CarouselContainer = styled.div`
     
     
     
-    height: 80%;
+    height: 100%;
     width: 85%;
     
   }
@@ -48,11 +48,9 @@ const CarouselContainer = styled.div`
   }
   
   .embla__slide__inner {
-    height: 615px;
+    height: 500px;
     overflow: hidden;
     position: relative;
-    margin-bottom: 30px;
-    overflow: hidden;
     
     :hover {
       transform: translate(-1px, -1px);
