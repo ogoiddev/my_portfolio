@@ -5,7 +5,7 @@ const CarouselContainer = styled.div`
   .embla {
     position: relative;
     background-color: transparent;
-    padding: 20px;
+    padding: 40px;
     
     
     height: 80%;
@@ -44,7 +44,7 @@ const CarouselContainer = styled.div`
   }
   
   .embla__slide__inner {
-    height: 680px;
+    height: 540px;
     overflow: hidden;
     position: relative;
     
@@ -74,7 +74,7 @@ const CarouselContainer = styled.div`
     top: 50%;
     left: 50%;
     width: 100%;
-    min-height: 100%;
+    /* min-height: 100%; */
     min-width: 100%;
     max-height: 100%;
     transform: translate(-50%, -50%);
