@@ -2,20 +2,38 @@ import styled from 'styled-components';
 
 
 const CarouselContainer = styled.div`
-  .carousel {
-    justify-content: space-between !important;
-    width: 75%;
-  }
+
   .embla {
     position: relative;
     background-color: transparent;
-    
-    
-    
     height: 100%;
-    width: 85%;
-    
+    width: 100%;
+    min-width: 820px;
   }
+  
+  .embla:first-child {
+    padding: 32px 0;
+    background: #11111150;
+    :hover {
+      transform: translate(-1px, -1px);
+      transition: 0.3s ease-in-out;
+
+      ::after {
+        background: ${ ({theme}) => theme.COLORS.GRAY };
+        border-radius: 4px;
+        bottom: 30px;
+        color: white;
+        content: 'Click to GitHub - https://';
+        font-size: 1rem;
+        font-weight: 600;
+        left: 16px;
+        padding: 8px 32px;
+        position: absolute;
+      }
+    }
+  }
+
+
 
   .embla__viewport {
     overflow: hidden;
@@ -52,23 +70,7 @@ const CarouselContainer = styled.div`
     overflow: hidden;
     position: relative;
     
-    :hover {
-      transform: translate(-1px, -1px);
-      transition: all 0.5s ease-in-out;
 
-      ::after {
-        background: ${ ({theme}) => theme.COLORS.GRAY };
-        border-radius: 4px;
-        bottom: 30px;
-        color: white;
-        content: 'Click to GitHub - https://';
-        font-size: 1rem;
-        font-weight: 600;
-        left: 16px;
-        padding: 8px 32px;
-        position: absolute;
-      }
-    }
   }
 
 
@@ -77,9 +79,7 @@ const CarouselContainer = styled.div`
     display: block;
     top: 50%;
     left: 50%;
-    width: 100%;
-    /* min-height: 100%; */
-    min-width: 100%;
+    max-width: 100%;
     max-height: 100%;
     transform: translate(-50%, -50%);
   }
@@ -98,6 +98,7 @@ const CarouselContainer = styled.div`
   .embla__slide--thumb {
     padding-left: 8px;
     min-width: 20%;
+    max-width: 100%;
 
     :hover {
       filter: brightness(1.2);
@@ -115,7 +116,7 @@ const CarouselContainer = styled.div`
     outline: 0;
     margin: 0;
     padding: 0;
-    height: 130px;
+    height: 120px;
     width: 100%;
     background-color: transparent;
     position: relative;
@@ -124,6 +125,7 @@ const CarouselContainer = styled.div`
       :after {
       content: '' !important;
       background: none !important;
+      
     }
   }
 

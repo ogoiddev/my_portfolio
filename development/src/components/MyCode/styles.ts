@@ -7,34 +7,40 @@ export const MyCodeContainer = styled.div`
     ${ ({theme}) => theme.COLORS.LINEAR_2 } 30%, 
     ${ ({theme}) => theme.COLORS.LINEAR_3 } 70%,
     ${ ({theme}) => theme.COLORS.LINEAR_4 } 100%);
-  
-  display: flex;
-  justify-content: center;
+    
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   .codes {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
-    gap: 32px;
-    flex-wrap: nowrap;
+    gap: 0 32px;
+    padding: 60px 0;
+    width: 90%;
+    height: 80%;
+    flex-wrap: wrap;
+
     
-    width: 90vw;
     position: relative;
   
     img:first-child {
-      width: 50%;     
+      max-width: 90%;
+      max-height: 500px;
       
     }
+
     img:nth-child(2) {
-      width: 35%;     
-      
+      max-width: 90%;     
+      max-height: 500px;
+      margin-top: 60px;
     }
   }
 
-  height: 100vh;
-  width: 100%;
-  padding-top: 150px;
-  position: relative;
 
 
 
