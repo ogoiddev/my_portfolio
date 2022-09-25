@@ -21,8 +21,8 @@ export const MyCodeContainer = styled.div`
     align-items: flex-start;
     gap: 0 32px;
     padding: 60px 0;
-    width: 90%;
-    height: 80%;
+    width: 80%;
+    height: 70%;
     flex-wrap: wrap;
 
     

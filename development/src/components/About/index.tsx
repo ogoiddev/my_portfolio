@@ -1,3 +1,4 @@
+import Skills from "../Skills";
 import { AboutContainer } from "./styles";
 
 export default function About() {
@@ -11,14 +12,25 @@ export default function About() {
           com um código claro, seguro e de fácil manutenção.
           O sucesso resulta de um código constantemente monitorado com qualidade.
         </span>
-
+        
+        <aside >
+        <h3 >Connect with me:</h3>
+          <a href="https://linkedin.com/in/ogoiddev" target="blank">
+            <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="ogoiddev" height="50" width="60" />
+          </a>
+          <a href="https://stackoverflow.com/users/20027746" target="blank">
+            <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="20027746" height="50" width="60" />
+          </a>
+          <a href="https://github.com/ogoiddev" target="blank">
+            <img src="/GitHub-Mark-Light-120px-plus.png" alt="github profile" height="50" />
+          </a>
+        </aside>
       </article>
       
-      <div className="gif">
-        <img className="esteira" src="/001.gif" alt="site em construção" />
+      <div className="skills">
+        <Skills/>
         
       </div>
-      {/* <img src="" alt="Foto Perfil de Diogo" /> */}
     </AboutContainer>
   );
 }

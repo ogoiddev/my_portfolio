@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const CarouselContainer = styled.div`
 
+
   .embla {
     position: relative;
     background-color: transparent;
