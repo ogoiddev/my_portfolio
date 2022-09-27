@@ -9,11 +9,11 @@ export const HomeContainer = styled.div`
   
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  padding-top: 150px;
 
   .arrow-hall-position {
     position: absolute;

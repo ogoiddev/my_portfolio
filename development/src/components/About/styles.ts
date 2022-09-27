@@ -3,12 +3,14 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 60px;
   
   flex-wrap: no-wrap;
-  width: 70%;
+  width: 80%;
   height: 70%;
+
+  padding: 100px 0;
   
   
   article {

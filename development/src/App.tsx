@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import Projects from './components/Projects';
 import { Hall } from './components/Hall';
 import MyCode from './components/MyCode';
+import Header from './components/Header';
 
 
 export default function App() {
@@ -29,7 +30,7 @@ export default function App() {
       
         <AppContainer onMouseMove={(e) => handleMoveMouse(e)}>
         <Cursor locate={locate}/>
-
+          <Header/>
           <Hall/>
 
           <GlobalStyle/>

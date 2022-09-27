@@ -8,7 +8,7 @@ export const MyCodeContainer = styled.div`
     ${ ({theme}) => theme.COLORS.LINEAR_3 } 70%,
     ${ ({theme}) => theme.COLORS.LINEAR_4 } 100%);
     
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
     display: flex;
@@ -18,11 +18,12 @@ export const MyCodeContainer = styled.div`
   .codes {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
+    
     gap: 0 32px;
     padding: 60px 0;
-    width: 80%;
-    height: 70%;
+    margin-bottom: 60px;
+    max-width: 90%;
+    max-height: 70%;
     flex-wrap: wrap;
 
     
