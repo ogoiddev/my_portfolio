@@ -28,7 +28,7 @@ export default function About() {
       </article>
       
       <div className="skills">
-        <Skills/>
+        
         
       </div>
     </AboutContainer>

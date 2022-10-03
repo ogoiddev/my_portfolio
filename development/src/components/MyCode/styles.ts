@@ -14,36 +14,36 @@ export const MyCodeContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
-  .codes {
+    flex-direction: column;
+    gap: 64px;
+    
+    .codes {
+    margin-top: 180px;
     display: flex;
     justify-content: space-evenly;
     
-    gap: 0 32px;
-    padding: 60px 0;
-    margin-bottom: 60px;
+    gap: 0 64px;
     max-width: 90%;
-    max-height: 70%;
+    min-height: 50vh;
     flex-wrap: wrap;
 
-    
     position: relative;
-  
-    img:first-child {
+
+    img {
       max-width: 90%;
-      max-height: 500px;
+      max-height: 400px;
+
+    }
+  
+    img:nth-child(1) {
       
     }
 
     img:nth-child(2) {
-      max-width: 90%;     
-      max-height: 500px;
-      margin-top: 60px;
+      margin-top: 64px;
     }
+
   }
-
-
-
 
   .arrow-code-position {
     position: absolute;

@@ -1,4 +1,5 @@
 import ArrowLinkUp from "../ArrowLinkUp";
+import Skills from "../Skills";
 import { MyCodeContainer } from "./styles";
 
 
@@ -15,6 +16,8 @@ export default function MyCode() {
         <img src="/code_context.png" alt="context code" />
         <img src="/code_carousel_css.png" alt="carousel css code" />
       </div>
+      <Skills/>
+
     </MyCodeContainer>
   );
 }

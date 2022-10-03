@@ -3,21 +3,22 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   display: flex;
   align-items: flex-end;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   gap: 60px;
   
   flex-wrap: no-wrap;
-  width: 80%;
-  height: 70%;
+  width: 60vw;
+  height: 60vh;
 
-  padding: 100px 0;
+
   
   
   article {
+    max-height: 100%;
     min-width: 300px;
     max-width: 500px;
     text-align: inherit;
-    padding: 24px;
+    padding: 32px;
     border-radius: 8px;
     transition: all 1s;
 
@@ -46,7 +47,7 @@ export const AboutContainer = styled.div`
     h1 {
       font-size: 3rem;
       color: ${ props => props.theme.COLORS.ARTICLE_TEXT };
-      margin: 64px 0;
+      margin: 38px 0;
       line-height: 3rem;
   
     }
@@ -77,7 +78,7 @@ export const AboutContainer = styled.div`
   aside {
     margin: 32px 0;
     h3 {
-      margin: 16px 0;
+      margin: 32px 0;
       color: ${ ({theme}) => theme.COLORS.BLUE_LIGHT};
     }
 

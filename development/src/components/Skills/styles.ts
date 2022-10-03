@@ -2,15 +2,17 @@ import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
   display: flex;
-  height: fit-content;
-  width: 100%;
+  flex-direction: column;
   
-
+  height: fit-content;
   min-width: 300px;
+  max-width: 90vw;
+  width: 64vw;
   text-align: inherit;
   padding: 24px;
   border-radius: 8px;
   transition: all 1s;
+  margin-bottom: 180px;
 
   color: ${ ({theme}) => theme.COLORS.BLUE_LIGHT};
 
@@ -30,6 +32,10 @@ export const SkillsContainer = styled.div`
       box-shadow: 1px 4px 4px ${ ({theme}) => theme.COLORS.BLUE_LIGHT};
     }
 
+  h3 {
+    margin: 32px 0;
+  }
+
   section {
 
     display: flex;
@@ -37,6 +43,7 @@ export const SkillsContainer = styled.div`
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
+
     
     a {
       border: 1px solid transparent;
