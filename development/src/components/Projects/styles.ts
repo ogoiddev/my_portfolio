@@ -9,7 +9,12 @@ export const ProjectsContainer = styled.div`
   min-height: 100vh;
 
 
-  background-color: ${({ theme: { COLORS }}) => COLORS.GRAY_GREEN_opacity_90 };
+  /* background-color: ${({ theme: { COLORS } }) => COLORS.GRAY_GREEN_opacity_90 }; */
+    /* background: radial-gradient(circle, 
+    ${ ({theme}) => theme.COLORS.LINEAR_1 } 0%, 
+    ${ ({theme}) => theme.COLORS.LINEAR_2 } 30%, 
+    ${ ({theme}) => theme.COLORS.LINEAR_3 } 70%,
+    ${ ({theme}) => theme.COLORS.LINEAR_4 } 100%); */
   position: relative;
 
   .arrow-projects-position {

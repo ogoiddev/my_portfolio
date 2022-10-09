@@ -9,8 +9,8 @@ export const AboutContainer = styled.div`
   bottom: 16%;
   right: 8%;
 
-  height: 68vh;
-  width: 80vw;
+  height: 58vh;
+  width: 44vw;
 
   
   :after {
@@ -31,7 +31,7 @@ export const AboutContainer = styled.div`
     border-right: 1px solid ${props => props.theme.COLORS.BLUE_LIGHT};
     border-bottom: 1px solid ${props => props.theme.COLORS.BLUE_LIGHT};
     filter: brightness(1.2);
-    width: 100%;
+    width: 180%;
     height: 100%;
   }
   
@@ -44,6 +44,7 @@ export const AboutContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    
     max-width: 90%;
     max-width: 100%;
 
@@ -88,6 +89,7 @@ export const AboutContainer = styled.div`
     h1 {
       color: ${ props => props.theme.COLORS.ARTICLE_TEXT };
       font-size: 2.5em;
+      text-align: end;
     }
     
     h2 {

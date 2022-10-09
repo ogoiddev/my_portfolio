@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 
 export const MyCodeContainer = styled.div`
-  background: radial-gradient(circle, 
+  /* background: radial-gradient(circle, 
     ${ ({theme}) => theme.COLORS.LINEAR_1 } 0%, 
     ${ ({theme}) => theme.COLORS.LINEAR_2 } 30%, 
     ${ ({theme}) => theme.COLORS.LINEAR_3 } 70%,
-    ${ ({theme}) => theme.COLORS.LINEAR_4 } 100%);
+    ${ ({theme}) => theme.COLORS.LINEAR_4 } 100%); */
     
     min-height: 100vh;
     width: 100%;
@@ -16,6 +16,15 @@ export const MyCodeContainer = styled.div`
     align-items: center;
     flex-direction: column;
     gap: 64px;
+
+    .header {
+      height: 36px;
+      width: 100%;
+      background-color: black;
+      text-align: center;
+      padding: 8px 0;
+      color: #aeaeae;
+    }
     
     .codes {
     margin-top: 180px;

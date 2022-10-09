@@ -5,6 +5,11 @@ export const AppContainer = styled.div`
   flex-direction: column;
   min-height: 100vh;
   width: 100vw;
+      background: radial-gradient(circle, 
+    ${ ({theme}) => theme.COLORS.LINEAR_1 } 0%, 
+    ${ ({theme}) => theme.COLORS.LINEAR_2 } 30%, 
+    ${ ({theme}) => theme.COLORS.LINEAR_3 } 70%,
+    ${ ({theme}) => theme.COLORS.LINEAR_4 } 100%);
 `;
 
 interface Props {

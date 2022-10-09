@@ -35,12 +35,13 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #2d3239;
+    /* background: #2d3239; */
     font-size: 14px;
     color: #333;
     font-family: 'Inter';
     width: 100vw;
     overflow-x: hidden;
     height: fit-content;
+  
   }
-  `
+`

@@ -6,7 +6,7 @@ export const FooterContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  height: 50px;
+  height: 44px;
   position: fixed;
   bottom: 0;
   background-color: ${ props => props.theme.COLORS.HEADER };
@@ -33,8 +33,8 @@ export const FooterContainer = styled.div`
       animation: resume infinite 1.5s ease-in-out alternate;
       appearance: none;
       text-decoration: none;
-      font-size: 1rem;
-      font-weight: 600;
+      font-size: 0.9rem;
+      font-weight: 500;
       position: relative;
 
     @keyframes resume {
