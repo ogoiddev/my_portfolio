@@ -6,7 +6,7 @@ export const FooterContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  height: 55px;
+  height: 50px;
   position: fixed;
   bottom: 0;
   background-color: ${ props => props.theme.COLORS.HEADER };

@@ -2,23 +2,27 @@ import styled from 'styled-components';
 
 
 const CarouselContainer = styled.div`
-
-
+  display: flex;
+  width: 70%;
+  max-height: 70vh;
+  
   .embla {
     position: relative;
     background-color: transparent;
-    height: 100%;
-    width: 100%;
     min-width: 820px;
   }
   
   .embla:first-child {
-    padding: 32px 0;
+    padding: 38px 0;
+    margin: 16px 0;
     background: #11111150;
+    min-height: 350px;
+    max-height: 45vh;
+    
     :hover {
       transform: translate(-1px, -1px);
       transition: 0.3s ease-in-out;
-
+      
       ::after {
         background: ${ ({theme}) => theme.COLORS.GRAY };
         border-radius: 4px;
@@ -33,23 +37,24 @@ const CarouselContainer = styled.div`
       }
     }
   }
-
-
-
+  
+  
+  
   .embla__viewport {
     overflow: hidden;
     width: 100%;
+    max-height: 100%;
   }
-
+  
   .embla__viewport.is-draggable {
     cursor: move;
     cursor: grab;
   }
-
+  
   .embla__viewport.is-dragging {
     cursor: grabbing;
   }
-
+  
   .embla__container {
     display: flex;
     user-select: none;
@@ -57,8 +62,9 @@ const CarouselContainer = styled.div`
     -khtml-user-select: none;
     -webkit-tap-highlight-color: transparent;
     margin-left: -10px;
-
+    
   }
+  
   
   .embla__slide {
     padding-left: 10px;
@@ -66,15 +72,17 @@ const CarouselContainer = styled.div`
     position: relative;
   }
   
+  
+  
   .embla__slide__inner {
-    height: 500px;
+    height: 300px;
     overflow: hidden;
     position: relative;
     
-
+    
   }
-
-
+  
+  
   .embla__slide__img {
     position: absolute;
     display: block;
@@ -84,32 +92,48 @@ const CarouselContainer = styled.div`
     max-height: 100%;
     transform: translate(-50%, -50%);
   }
-
+  
   .embla--thumb {
-    padding-top: 0;
-    margin-top: 42px;
     
   }
-
+  
   .embla__container--thumb {
     cursor: default;
     margin-left: -8px;
   }
-
+  
   .embla__slide--thumb {
     padding-left: 8px;
     min-width: 20%;
-    max-width: 100%;
-
-    :hover {
-      filter: brightness(1.2);
-      transform: scale(1.1);
-      opacity: 1 !important;
+    
+    :after {
+      content: '';
+      width: 0;
+      height: 0;
+      display: block;
+      border: 0px solid ${props => props.theme.COLORS.BLUE_LIGHT};
+      transition: 400ms;
+      position: absolute;
+      bottom: -1px;
+      
+      
+      transition: 0.3s ease-out;
 
     }
 
-  }
+    :hover:after {
+      border: 1px solid ${props => props.theme.COLORS.BLUE_LIGHT};
+      filter: brightness(1.2);
+      width: 92%;
+      height: 2px;
+      background: ${props => props.theme.COLORS.BLUE_LIGHT};
 
+      opacity: 1 !important;
+      
+    }
+    
+  }
+  
   .embla__slide__inner--thumb {
     touch-action: manipulation;
     cursor: pointer;
@@ -117,8 +141,8 @@ const CarouselContainer = styled.div`
     outline: 0;
     margin: 0;
     padding: 0;
-    height: 120px;
-    width: 100%;
+    height: 100px;
+    min-width: 100%;
     background-color: transparent;
     position: relative;
     display: block;
@@ -129,7 +153,7 @@ const CarouselContainer = styled.div`
       
     }
   }
-
+  
   .embla__slide__thumbnail {
     position: absolute;
     opacity: 0.2;
@@ -141,9 +165,9 @@ const CarouselContainer = styled.div`
     min-width: 1000%;
     min-height: 1000%;
     max-width: none;
-    transform: scale(0.1);
+    transform: scale(0.08);
     transition: opacity 0.2s;
-
+    
     :hover {
       opacity: 1 !important;
     }
@@ -151,7 +175,12 @@ const CarouselContainer = styled.div`
   
   .embla__slide--thumb.is-selected .embla__slide__thumbnail {
     opacity: 1;
+    
+  }
 
+  .embla__slide--thumb.is-selected:after {
+    border: 1px solid ${props => props.theme.COLORS.BLUE_LIGHT};
+    width: 92%;
   }
 `
 

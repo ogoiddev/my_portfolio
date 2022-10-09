@@ -10,15 +10,10 @@ export const HeaderContainer = styled.div`
   top: 0;
   min-height: 75px;
   width: 100%;
-  background-color: ${ props => props.theme.COLORS.HEADER };
+  /* background-color: ${ props => props.theme.COLORS.HEADER }; */
+  background: transparent;
   opacity: 0.9;
 
-  box-shadow: 4px 0 12px ${ props => props.theme.COLORS.GRAY };;
-
-  :hover {
-    background-color: ${ props => props.theme.COLORS.GRAY };
-    opacity: 1;
-  }
 
   
   @media (max-width: 820px) {

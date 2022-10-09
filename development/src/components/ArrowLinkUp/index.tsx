@@ -5,7 +5,7 @@ import styled from "styled-components";
 const ArrowUpContainer = styled.div`
   display: flex;
   flex-direction: column;
-  max-height: 80px;
+  max-height: 32px;
   width: fit-content;
 
   .arrowUp {

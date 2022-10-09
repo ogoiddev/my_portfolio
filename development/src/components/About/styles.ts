@@ -2,115 +2,104 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
-  justify-content: flex-start;
-  gap: 60px;
-  
-  flex-wrap: no-wrap;
-  width: 60vw;
-  height: 60vh;
 
+  position: absolute;
+  bottom: 16%;
+  right: 8%;
+
+  height: 68vh;
+  width: 80vw;
 
   
+  :after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: 400ms;
+    position: absolute;
+    bottom: 0;
+    transition: 0.5s ease-out;
+
+  }
+
+  :hover:after {
+    border-right: 1px solid ${props => props.theme.COLORS.BLUE_LIGHT};
+    border-bottom: 1px solid ${props => props.theme.COLORS.BLUE_LIGHT};
+    filter: brightness(1.2);
+    width: 100%;
+    height: 100%;
+  }
   
   article {
-    max-height: 100%;
-    min-width: 300px;
-    max-width: 500px;
-    text-align: inherit;
-    padding: 32px;
-    border-radius: 8px;
-    transition: all 1s;
-
-
-    
-    background: linear-gradient(135deg, 
+    background: linear-gradient(151deg, 
       ${ ({theme}) => theme.COLORS.ARTICLE_1 } 0%, 
       ${ ({theme}) => theme.COLORS.ARTICLE_2 } 66%, 
       ${ ({theme}) => theme.COLORS.ARTICLE_3 } 100%);
-
     
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 90%;
+    max-width: 100%;
 
-    :hover {
-      filter: brightness(1.2);
-      transition: ease-in-out 0.2s;
-      transform: translateY(-1px);
-      box-shadow: 1px 4px 4px ${ ({theme}) => theme.COLORS.BLUE_LIGHT};
-    }
+    padding: 16px;
     
-    span {
-      font-size: 1.2rem;
-      color: ${ props => props.theme.COLORS.ARTICLE_TEXT };
-      line-height: 1.2;
-    }
-    
-    h1 {
-      font-size: 3rem;
-      color: ${ props => props.theme.COLORS.ARTICLE_TEXT };
-      margin: 38px 0;
-      line-height: 3rem;
-  
-    }
-  
-    h2 {
-      font-size: 2rem;
-      color: ${ props => props.theme.COLORS.BLUE_LIGHT };
-      margin: 16px 0;
-      flex: 1;
-      inline-size: auto;
-    }
+    aside {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-bottom: 60px;
+      width: fit-content;
+      z-index: 88;
 
-    
-  }
-
-  
-    @media (max-width: 1336px) {
-    inline-size: min-content;
-    min-width: 90%;
-    margin: 0;
-  
-
-    
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  aside {
-    margin: 32px 0;
-    h3 {
-      margin: 32px 0;
+      h3 {
+      margin: 4px 16px;
       color: ${ ({theme}) => theme.COLORS.BLUE_LIGHT};
-    }
-
-    a {
-      margin: 16px;
+      }
       
+      div {
+        display: flex;
 
-      img {
-        padding: 4px;
-        :hover {
-          transition: 0.3s;
-          border-radius: 8px;
-          border: 1px solid aqua;
+        a {
+          margin: 16px 8px;
+          flex: 1;
+          border: 1px solid transparent;
+          
+          :hover {
+            transition: all 0.3s;
+            border-radius: 8px;
+            border: 1px solid ${ ({theme}) => theme.COLORS.BLUE_LIGHT };
+          }
+        
+          img {
+            width: 32px;
+            height: 32px;
+            margin: 8px;
+          }
         }
       }
     }
-  }
 
-
-
-  .skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 50%;
-    border-radius: 16px;
-    
-    @media (max-width: 820px) {
-      inline-size: min-content;
-      min-width: 90%;
-      margin-top: 60px;
-      flex-wrap: wrap;
+    h1 {
+      color: ${ props => props.theme.COLORS.ARTICLE_TEXT };
+      font-size: 2.5em;
     }
-  }
-`
+    
+    h2 {
+      color: ${ props => props.theme.COLORS.BLUE_LIGHT };
+    }
+    
+    span {
+      color: ${ props => props.theme.COLORS.ARTICLE_TEXT };
+      max-width: 435px;
+      margin: 32px 0;
+    }
+    
+    
+
+}`

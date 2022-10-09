@@ -3,9 +3,8 @@ import styled, { StyledComponent } from 'styled-components';
 export const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: fit-content;
-  width: 100%;
-  
+  min-height: 100vh;
+  width: 100vw;
 `;
 
 interface Props {

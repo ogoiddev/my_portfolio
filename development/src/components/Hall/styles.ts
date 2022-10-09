@@ -8,12 +8,10 @@ export const HomeContainer = styled.div`
     ${ ({theme}) => theme.COLORS.LINEAR_4 } 100%);
   
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   min-height: 100vh;
   width: 100%;
+
 
   .arrow-hall-position {
     position: absolute;

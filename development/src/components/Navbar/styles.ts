@@ -23,8 +23,8 @@ export const NavbarContainer = styled.div`
 
     appearance: none;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
 
     inline-size: auto;
 

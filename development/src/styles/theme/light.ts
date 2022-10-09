@@ -9,9 +9,9 @@ export default {
     TEXT: '#0E031E',
     TEXT_ACCENT: '#ff051e',
 
-    ARTICLE_1: '#24292a',
-    ARTICLE_2: '#161420',
-    ARTICLE_3: '#0c1613',
+    ARTICLE_1: '#24292a05',
+    ARTICLE_2: '#16142010',
+    ARTICLE_3: '#0c161340',
     
     ARTICLE_TEXT: '#e7e9ea',
 
