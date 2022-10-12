@@ -7,10 +7,10 @@ export const FooterContainer = styled.div`
   align-items: flex-start;
   width: 100%;
   height: 44px;
-  position: fixed;
-  bottom: 0;
+  
+  
   background-color: ${ props => props.theme.COLORS.HEADER };
-  z-index: 88;
+
 
   @media (max-width: 820px) {
     position: relative;

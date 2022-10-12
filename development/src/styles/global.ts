@@ -6,6 +6,8 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
+    max-width: 1597px;
     /* border: 1px solid red; */
   }
   
@@ -35,7 +37,7 @@ export default createGlobalStyle`
   }
 
   body {
-    /* background: #2d3239; */
+    background: #2d3239;
     font-size: 14px;
     color: #333;
     font-family: 'Inter';

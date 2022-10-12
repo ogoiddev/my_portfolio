@@ -63,7 +63,7 @@ export const MyCodeContainer = styled.div`
 
 
 export const FooterPage = styled.div`
-  background: ${props => props.theme.COLORS.GRAY}50;
+  background: ${props => props.theme.COLORS.GRAY_BLACK};
   width: 100%;
-  height: 50vh;
+  height: 70vh;
 `

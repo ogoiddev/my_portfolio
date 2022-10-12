@@ -14,22 +14,21 @@ export const SkillsContainer = styled.div`
   transition: all 1s;
   margin-bottom: 180px;
 
-  color: ${ ({theme}) => theme.COLORS.BLUE_LIGHT};
+  color: ${ ({theme}) => theme.COLORS.TEXT};
 
     
-    background: linear-gradient(135deg, 
+    background: linear-gradient(151deg, 
       ${ ({theme}) => theme.COLORS.ARTICLE_1 } 0%, 
-      ${ ({theme}) => theme.COLORS.ARTICLE_2 } 66%, 
+      ${ ({theme}) => theme.COLORS.ARTICLE_2 } 86%, 
       ${ ({theme}) => theme.COLORS.ARTICLE_3 } 100%);
 
 
     
 
     :hover {
-      filter: brightness(1.5);
+      filter: brightness(1.6);
       transition: ease-in-out 0.2s;
       transform: translateY(-1px);
-      box-shadow: 1px 4px 4px ${ ({theme}) => theme.COLORS.BLUE_LIGHT};
     }
 
   h3 {
@@ -53,7 +52,7 @@ export const SkillsContainer = styled.div`
       :hover {
         transition: 0.3s;
         border-radius: 8px;
-        border: 1px solid ${ ({theme}) => theme.COLORS.BLUE_LIGHT};
+        border: 1px solid ${ ({theme}) => theme.COLORS.TEXT_ACCENT};
       }
     }
   }

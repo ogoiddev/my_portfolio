@@ -17,11 +17,6 @@ export default () => (
         <Label>Links</Label>
 
         <Group >
-          <a href='#hall'  className='link-a'>
-            <Item onSelect={(e) => e.preventDefault()}>
-              Esse sou eu
-            </Item>
-          </a>
           <a href='#projects' className='link-a'>
             <Item onSelect={(e) => e.preventDefault()}>
               Projects

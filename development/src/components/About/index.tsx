@@ -1,7 +1,10 @@
-import Skills from "../Skills";
 import { AboutContainer } from "./styles";
+import { useContext } from 'react';
+import { UserThemeContext } from "../../context/UserThemeContext";
 
 export default function About() {
+  const { theme } = useContext(UserThemeContext);
+  
   return (
     <AboutContainer>
 
@@ -15,8 +18,8 @@ export default function About() {
             <a href="https://stackoverflow.com/users/20027746" target="blank">
               <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="20027746" height="50" width="60" />
             </a>
-            <a href="https://github.com/ogoiddev" target="blank">
-              <img src="/GitHub-Mark-Light-120px-plus.png" alt="github profile" height="50" />
+            <a href="https://github.com/ogoiddev" target="blank" >
+              <img src={ theme ? "./GitHub-Mark-Light-120px-plus.png" : "./github_black.png"} alt="github profile" height="50" />
             </a>
           </div>
         </aside>

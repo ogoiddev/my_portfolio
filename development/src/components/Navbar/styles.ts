@@ -17,8 +17,10 @@ export const NavbarContainer = styled.div`
   a {
     display: flex;
     align-items: center;
-    color: ${props => props.theme.COLORS.GRAY_LIGHT };
-    height: 45px;
+    color: ${props => props.theme.COLORS.TEXT };
+    height: 100%;
+    
+
     padding: 0 16px;
 
     appearance: none;
@@ -35,7 +37,7 @@ export const NavbarContainer = styled.div`
       width: 0;
       height: 1px;
       display: block;
-      background: ${props => props.theme.COLORS.BLUE_LIGHT};
+      background: ${props => props.theme.COLORS.TEXT_HOVER};
       transition: 400ms;
       position: absolute;
       bottom: 0;
@@ -43,17 +45,17 @@ export const NavbarContainer = styled.div`
 
     }
     :hover {
-      color: ${props => props.theme.COLORS.BLUE_LIGHT}
+      color: ${props => props.theme.COLORS.TEXT_HOVER}
     }
 
     :hover:after {
-      width: 90%;
+      width: 80%;
     }
 
     :active {
       transform: translate(1px, 1px);
       border-radius: 4px;
-      background: ${props => props.theme.COLORS.BLUE_LIGHT}10;
+      background: ${props => props.theme.COLORS.TEXT_HOVER}10;
     }
 
 

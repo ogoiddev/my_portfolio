@@ -16,7 +16,7 @@ export const CarouselContainer = styled.div`
   display: flex;
   flex-direction: column;
   
-  margin-top: 32px;
+  margin-top: 64px;
 
   .embla {
     position: relative;

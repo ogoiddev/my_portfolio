@@ -5,7 +5,6 @@ export default function Navbar() {
 
   return (
     <NavbarContainer>
-      <a href="#hall">Esse sou eu</a>
       
       <a href="#projects">Projects</a>
       

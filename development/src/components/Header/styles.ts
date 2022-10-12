@@ -32,6 +32,7 @@ export const HeaderContainer = styled.div`
     gap: 30px;
     align-items: center;
     width: fit-content;
+    height: 70px;
     padding-right: 28px;
   }
 
