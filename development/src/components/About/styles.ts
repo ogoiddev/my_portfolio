@@ -56,6 +56,7 @@ export const AboutContainer = styled.div`
 
     border-radius: 4px 0 0 0;
     max-width: 100%;
+    min-width: 338px;
 
     padding: 16px;
     

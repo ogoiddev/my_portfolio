@@ -2,16 +2,25 @@ import styled from 'styled-components';
 
 
 export const CarouselArticle = styled.div`
-  background: ${props => props.theme.COLORS.GRAY_BLACK}99;
+  background: ${props => props.theme.COLORS.GRAY_BLACK};
   width: 100%;
   height: 380px;
   margin-top: 16px;
 
-  padding: 16px;
+  padding: 20px;
 
-  p {
-    font-size: 1.2rem;
-    color: ${props => props.theme.COLORS.CAROUSEL_TEXT};
+  h3 {
+    color: white;
+    margin: 8px 0;
+  }
+
+  .content {
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6rem;
+      color: ${props => props.theme.COLORS.CAROUSEL_TEXT};
+    }
   }
 `
 
@@ -142,11 +151,11 @@ export const CarouselContainer = styled.div`
     }
 
     :hover:after {
-      border: 1px solid ${props => props.theme.COLORS.BLUE_LIGHT};
+      border: 1px solid ${props => props.theme.COLORS.TEXT_HOVER};
       filter: brightness(1.2);
       width: 92%;
       height: 2px;
-      background: ${props => props.theme.COLORS.BLUE_LIGHT};
+      background: ${props => props.theme.COLORS.TEXT_HOVER};
 
       opacity: 1 !important;
       
@@ -199,7 +208,7 @@ export const CarouselContainer = styled.div`
   }
 
   .embla__slide--thumb.is-selected:after {
-    border: 1px solid ${props => props.theme.COLORS.BLUE_LIGHT};
+    border: 1px solid ${props => props.theme.COLORS.TEXT_HOVER};
     width: 92%;
   }
 `

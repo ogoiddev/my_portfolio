@@ -86,10 +86,11 @@ export const Carousel = (props: PropType) => {
           </div>
         </div>
       <CarouselArticle>
-        
-          <div className="content">
-            <p>{articleByIndex(selectedIndex)}</p>
-          </div>
+        <h3>Description:</h3>
+
+        <div className="content">
+          <p>{articleByIndex(selectedIndex)}</p>
+        </div>
         
 
       </CarouselArticle>

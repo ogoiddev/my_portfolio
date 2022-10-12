@@ -1,5 +1,25 @@
 import styled from 'styled-components';
 
+export const ProjectsContent = styled.div`
+  background: linear-gradient(151deg, 
+    ${ ({theme}) => theme.COLORS.ARTICLE_1 } 0%, 
+    ${ ({theme}) => theme.COLORS.ARTICLE_2 } 86%, 
+    ${ ({theme}) => theme.COLORS.ARTICLE_3 } 100%);
+
+  width: 80vw;
+  max-height: fit-content;
+  
+
+  p {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: ${ ({theme}) => theme.COLORS.TEXT };
+  }
+`
 
 export const ProjectsContainer = styled.div`
   display: flex;

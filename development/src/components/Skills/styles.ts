@@ -38,7 +38,7 @@ export const SkillsContainer = styled.div`
   section {
 
     display: flex;
-    
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
