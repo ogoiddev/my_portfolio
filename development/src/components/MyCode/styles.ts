@@ -59,6 +59,14 @@ export const MyCodeContainer = styled.div`
     bottom: 160px;
     left: 30px;
   }
+
+
+.carousel {
+
+      @media (max-width: 820px) {
+        display: none;
+      }
+  }
 `
 
 

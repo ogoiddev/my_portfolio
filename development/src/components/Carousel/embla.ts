@@ -2,10 +2,17 @@ import styled from 'styled-components';
 
 
 export const CarouselArticle = styled.div`
-  background: ${props => props.theme.COLORS.GRAY}70;
+  background: ${props => props.theme.COLORS.GRAY_BLACK}99;
   width: 100%;
   height: 380px;
   margin-top: 16px;
+
+  padding: 16px;
+
+  p {
+    font-size: 1.2rem;
+    color: ${props => props.theme.COLORS.CAROUSEL_TEXT};
+  }
 `
 
 export const CarouselContainer = styled.div`
@@ -27,9 +34,10 @@ export const CarouselContainer = styled.div`
   .embla:first-child {
     padding: 38px 0;
     margin: 16px 0;
-    background: #11111150;
+    background: ${props => props.theme.COLORS.GRAY_BLACK}25;
     min-height: 350px;
-    max-height: 45vh;
+    max-height: 65vh;
+    min-height: 380px;
     
     :hover {
       transform: translate(-1px, -1px);

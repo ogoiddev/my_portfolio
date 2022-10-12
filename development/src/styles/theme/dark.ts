@@ -16,6 +16,8 @@ export default {
 
     ARTICLE_TEXT: '#daffef',
 
+    CAROUSEL_TEXT: '#ffd447',
+
     HEADER: '#2d323985',
 
     BLUE_LIGHT_ARTICLE_EFFECT: '#00d0ff',
