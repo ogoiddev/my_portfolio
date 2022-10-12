@@ -28,13 +28,14 @@ export const MyCodeContainer = styled.div`
     
     .codes {
     margin-top: 180px;
+
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     
     gap: 0 64px;
     max-width: 90%;
     min-height: 50vh;
-    flex-wrap: wrap;
 
     position: relative;
 

@@ -7,7 +7,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
     scroll-behavior: smooth;
 
-    max-width: 1597px;
+    max-width: 1937px;
     /* border: 1px solid red; */
   }
   

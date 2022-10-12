@@ -11,6 +11,7 @@ export const AboutContainer = styled.div`
 
   height: 48vh;
   width: 36vw;
+  max-width: 100%;
 
   padding-top: 16px;
 

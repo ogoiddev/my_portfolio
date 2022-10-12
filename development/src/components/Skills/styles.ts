@@ -7,9 +7,9 @@ export const SkillsContainer = styled.div`
   height: fit-content;
   min-width: 300px;
   max-width: 90vw;
-  width: 64vw;
+  width: 1118px;
   text-align: inherit;
-  padding: 24px;
+  padding: 32px;
   border-radius: 8px;
   transition: all 1s;
   margin-bottom: 180px;
@@ -26,9 +26,11 @@ export const SkillsContainer = styled.div`
     
 
     :hover {
-      filter: brightness(1.6);
-      transition: ease-in-out 0.2s;
+      transition: 0.4s ease-in-out;
       transform: translateY(-1px);
+      filter: brightness(1.2);
+      background: ${ ({ theme }) => theme.COLORS.GRAY_BLACK };
+      color: white;
     }
 
   h3 {
@@ -40,7 +42,7 @@ export const SkillsContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 12px;
     width: 100%;
 
     

@@ -8,6 +8,8 @@ export const ProjectsContent = styled.div`
 
   width: 80vw;
   max-height: fit-content;
+
+  padding: 32px;
   
 
   p {
