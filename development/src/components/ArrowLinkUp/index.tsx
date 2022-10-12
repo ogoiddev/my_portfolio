@@ -37,7 +37,7 @@ const ArrowUpContainer = styled.div`
 export default function ArrowLinkUp() {
   return (
     <ArrowUpContainer>
-      <CaretDoubleUp weight="regular" className="arrowUp" size={40}/>
+      <CaretDoubleUp weight="regular" className="arrowUp" size={28}/>
     </ArrowUpContainer>
   );
 }

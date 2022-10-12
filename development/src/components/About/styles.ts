@@ -9,30 +9,37 @@ export const AboutContainer = styled.div`
   bottom: 16%;
   right: 8%;
 
-  height: 58vh;
-  width: 44vw;
+  height: 48vh;
+  width: 36vw;
 
   
   :after {
     content: '';
+    
     width: 0;
     height: 0;
     display: block;
+    
     border-right: 1px solid transparent;
     border-bottom: 1px solid transparent;
-    transition: 400ms;
+    
     position: absolute;
     bottom: 0;
+    
     transition: 0.5s ease-out;
 
+  }
+
+  :hover {
+
+    filter: brightness(1.2);
   }
 
   :hover:after {
     border-right: 1px solid ${props => props.theme.COLORS.BLUE_LIGHT};
     border-bottom: 1px solid ${props => props.theme.COLORS.BLUE_LIGHT};
-    filter: brightness(1.2);
-    width: 180%;
-    height: 100%;
+    width: 220%;
+    height: 116%;
   }
   
   article {
@@ -44,8 +51,7 @@ export const AboutContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
-    max-width: 90%;
+
     max-width: 100%;
 
     padding: 16px;

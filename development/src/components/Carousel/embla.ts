@@ -1,11 +1,23 @@
 import styled from 'styled-components';
 
 
-const CarouselContainer = styled.div`
+export const CarouselArticle = styled.div`
+  background: ${props => props.theme.COLORS.GRAY}70;
+  width: 100%;
+  height: 380px;
+  margin-top: 16px;
+`
+
+export const CarouselContainer = styled.div`
   display: flex;
   width: 70%;
-  max-height: 70vh;
+  max-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
   
+  margin-top: 32px;
+
   .embla {
     position: relative;
     background-color: transparent;
@@ -183,5 +195,3 @@ const CarouselContainer = styled.div`
     width: 92%;
   }
 `
-
-export default CarouselContainer;

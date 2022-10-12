@@ -7,8 +7,8 @@ export const AppContainer = styled.div`
   width: 100vw;
       background: radial-gradient(circle, 
     ${ ({theme}) => theme.COLORS.LINEAR_1 } 0%, 
-    ${ ({theme}) => theme.COLORS.LINEAR_2 } 30%, 
-    ${ ({theme}) => theme.COLORS.LINEAR_3 } 70%,
+    ${ ({theme}) => theme.COLORS.LINEAR_2 } 50%, 
+    ${ ({theme}) => theme.COLORS.LINEAR_3 } 75%,
     ${ ({theme}) => theme.COLORS.LINEAR_4 } 100%);
 `;
 

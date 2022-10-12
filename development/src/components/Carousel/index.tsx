@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, ReactNode } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { Thumb } from "./Thumb";
 import { linkByIndex, mediaByIndex } from "./medias";
-import CarouselContainer from "./embla";
+import { CarouselArticle, CarouselContainer } from "./embla";
 
 
 import EmblaCarousel, {
@@ -85,7 +85,9 @@ export const Carousel = (props: PropType) => {
             </div>
           </div>
         </div>
-      
+      <CarouselArticle>
+        <div className="content"/>
+      </CarouselArticle>
     </CarouselContainer>
   );
 };
