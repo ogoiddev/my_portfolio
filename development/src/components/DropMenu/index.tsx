@@ -32,7 +32,7 @@ export default () => (
               Como posso ajudar?
             </Item>
           </a>
-          <a href="./resume_ogoiddev_03-10-2022.pdf" target="_blank" download className='link-a resume'>
+          <a href="./curriculo_resume_ogoiddev_13-10-22.pdf" target="_blank" download className='link-a resume'>
             <Item onSelect={(e) => e.preventDefault()}>
               CURRÍCULO
             </Item>
