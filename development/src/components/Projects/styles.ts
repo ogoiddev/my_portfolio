@@ -1,29 +1,6 @@
 import styled from 'styled-components';
 
-export const ProjectsContent = styled.div`
-  background: linear-gradient(151deg, 
-    ${ ({theme}) => theme.COLORS.ARTICLE_1 } 0%, 
-    ${ ({theme}) => theme.COLORS.ARTICLE_2 } 86%, 
-    ${ ({theme}) => theme.COLORS.ARTICLE_3 } 100%);
 
-  width: 100vw;
-  min-height: 100vh;
-  max-height: fit-content;
-
-  padding: 8px;
-  
-
-  p {
-    min-width: 304px;
-    max-width: 60%;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.4rem;
-    line-height: 2.2rem;
-    color: ${ ({theme}) => theme.COLORS.TEXT };
-  }
-`
 
 export const ProjectsContainer = styled.div`
   display: flex;
@@ -53,5 +30,29 @@ export const ProjectsContainer = styled.div`
     bottom: 160px;
     left: 30px;
 
+  }
+`
+
+export const ProjectsContent = styled.div`
+  background: linear-gradient(151deg, 
+    ${ ({theme}) => theme.COLORS.ARTICLE_1 } 0%, 
+    ${ ({theme}) => theme.COLORS.ARTICLE_2 } 86%, 
+    ${ ({theme}) => theme.COLORS.ARTICLE_3 } 100%);
+
+  width: 100vw;
+  max-height: fit-content;
+
+  padding: 8px;
+  
+
+  p {
+    min-width: 304px;
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: ${ ({theme}) => theme.COLORS.TEXT };
   }
 `

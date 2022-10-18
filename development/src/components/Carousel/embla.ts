@@ -5,7 +5,6 @@ export const CarouselArticle = styled.div`
   background: ${props => props.theme.COLORS.GRAY_BLACK};
   width: 100%;
   height: 380px;
-  margin-top: 16px;
 
   padding: 20px;
 
@@ -32,7 +31,7 @@ export const CarouselContainer = styled.div`
   display: flex;
   flex-direction: column;
   
-  margin-top: 64px;
+  margin-top: 104px;
 
   .embla {
     position: relative;
@@ -46,7 +45,7 @@ export const CarouselContainer = styled.div`
     background: ${props => props.theme.COLORS.GRAY_BLACK}25;
     min-height: 350px;
     max-height: 65vh;
-    min-height: 380px;
+    min-height: 460px;
     
     :hover {
       transform: translate(-1px, -1px);
@@ -104,7 +103,7 @@ export const CarouselContainer = styled.div`
   
   
   .embla__slide__inner {
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     position: relative;
     
@@ -119,6 +118,7 @@ export const CarouselContainer = styled.div`
     left: 50%;
     max-width: 100%;
     max-height: 100%;
+    height: 96%;
     transform: translate(-50%, -50%);
   }
   
@@ -181,6 +181,8 @@ export const CarouselContainer = styled.div`
       background: none !important;
       
     }
+    // por acaso
+    box-shadow: 0 4px 24px ${props => props.theme.COLORS.TEXT_HOVER };
   }
   
   .embla__slide__thumbnail {
