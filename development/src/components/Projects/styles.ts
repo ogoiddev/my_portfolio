@@ -13,7 +13,8 @@ export const ProjectsContent = styled.div`
   
 
   p {
-    max-width: 90%;
+    min-width: 304px;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
     text-align: center;

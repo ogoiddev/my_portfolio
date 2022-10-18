@@ -7,10 +7,10 @@ export const IconButton = styled('button')`
   align-items: center;
   justify-content: center;
 
-  color: ${({theme}) => theme.COLORS.BLUE_LIGHT };
+  color: ${({theme}) => theme.COLORS.TEXT_ACCENT };
 
   .menu {
-    text-shadow: ${({theme}) => theme.COLORS.BLUE_LIGHT } 2px 2px;
+    text-shadow: ${({theme}) => theme.COLORS.TEXT_ACCENT } 2px 2px;
   }
 
   :hover { 
@@ -41,7 +41,7 @@ export const Portal = styled(DropdownMenu.Portal)`
 
 export const Label = styled(DropdownMenu.Label)`
   width: fit-content;
-  color: ${ ({theme}) => theme.COLORS.BLUE_LIGHT };
+  color: ${ ({theme}) => theme.COLORS.TEXT_ACCENT };
   font-size: 1.4rem;
   line-height: 1.4;
   font-weight: 800;
@@ -53,16 +53,13 @@ export const Item = styled(DropdownMenu.Item)`
   font-size: 1.2rem;
   display: flex;
   align-items: center;
-  width: 250px;
+  width: 230px;
   max-width: 300px;
   color: ${ ({theme}) => theme.COLORS.ARTICLE_TEXT };
-  border: 1px solid ${ ({theme}) => theme.COLORS.BLUE_LIGHT };  
+  border: 1px solid ${ ({theme}) => theme.COLORS.TEXT_ACCENT };  
   border-radius: 4px;
-  padding: 4px 16px;
+  padding: 16px;
   margin: 24px 0;
-  
-
-
 `
 
 export const Group = styled(DropdownMenu.Group)`
@@ -89,15 +86,18 @@ export const RadioItem = styled(DropdownMenu.RadioItem)`
 `
 
 export const Content = styled(DropdownMenu.Content)`
-  background: ${ ({theme}) => theme.COLORS.GRAY };
+  background: ${ ({theme}) => theme.COLORS.GRAY_BLACK };
   
-  min-width: 70%;
+  min-width: 60%;
   max-width: fit-content;
-  padding: 16px;
+  padding: 32px;
   
-  margin: 45px 45px auto auto;
-  border-radius: 4px;
+  margin: 0px auto;
+  border-radius: 4px 0 0 24px;
   
+  z-index: 999;
+
+
   animation-duration: 400ms;
   animation-name: slideDownAndFade;
   animation-name: slideLeftAndFade;

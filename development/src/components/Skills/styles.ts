@@ -49,7 +49,6 @@ export const SkillsContainer = styled.div`
     align-self: center;
     gap: 12px;
     width: 70%;
-    max-height: 300px;
 
     @media (max-width: 820) {
       width: 100%;
