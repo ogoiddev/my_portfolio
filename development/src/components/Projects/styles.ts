@@ -6,15 +6,16 @@ export const ProjectsContent = styled.div`
     ${ ({theme}) => theme.COLORS.ARTICLE_2 } 86%, 
     ${ ({theme}) => theme.COLORS.ARTICLE_3 } 100%);
 
-  width: 80vw;
+  width: 100vw;
+  min-height: 100vh;
   max-height: fit-content;
 
-  padding: 32px;
+  padding: 8px;
   
 
   p {
     min-width: 304px;
-    max-width: 100%;
+    max-width: 60%;
     display: block;
     margin: 0 auto;
     text-align: center;
