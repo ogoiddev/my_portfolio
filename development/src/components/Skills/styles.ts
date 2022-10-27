@@ -2,47 +2,57 @@ import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
   display: flex;
-  flex-direction: column;
   
+  justify-content: center;
+
   height: fit-content;
   min-width: 300px;
-  max-width: 90vw;
-  width: 64vw;
-  text-align: inherit;
-  padding: 24px;
-  border-radius: 8px;
+  max-width: 100vw;
+  width: 100%;
+
+  padding: 32px;
+
   transition: all 1s;
+
   margin-bottom: 180px;
 
-  color: ${ ({theme}) => theme.COLORS.BLUE_LIGHT};
+  color: ${ ({theme}) => theme.COLORS.TEXT};
 
     
-    background: linear-gradient(135deg, 
+    background: linear-gradient(151deg, 
       ${ ({theme}) => theme.COLORS.ARTICLE_1 } 0%, 
-      ${ ({theme}) => theme.COLORS.ARTICLE_2 } 66%, 
+      ${ ({theme}) => theme.COLORS.ARTICLE_2 } 86%, 
       ${ ({theme}) => theme.COLORS.ARTICLE_3 } 100%);
 
 
     
 
     :hover {
-      filter: brightness(1.5);
-      transition: ease-in-out 0.2s;
+      transition: 0.4s ease-in-out;
       transform: translateY(-1px);
-      box-shadow: 1px 4px 4px ${ ({theme}) => theme.COLORS.BLUE_LIGHT};
+      background: ${ ({ theme }) => theme.COLORS.GRAY_BLACK };
+      color: white;
     }
 
   h3 {
-    margin: 32px 0;
+    margin: 12px 0;
+    width: 100%;
   }
 
   section {
 
     display: flex;
+    justify-content: space-evenly;
     
     flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
+    
+    align-self: center;
+    gap: 12px;
+    width: 70%;
+
+    @media (max-width: 820) {
+      width: 100%;
+    }
 
     
     a {
@@ -53,7 +63,7 @@ export const SkillsContainer = styled.div`
       :hover {
         transition: 0.3s;
         border-radius: 8px;
-        border: 1px solid ${ ({theme}) => theme.COLORS.BLUE_LIGHT};
+        border: 1px solid ${ ({theme}) => theme.COLORS.TEXT_ACCENT};
       }
     }
   }

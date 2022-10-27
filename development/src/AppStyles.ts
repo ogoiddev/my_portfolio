@@ -5,8 +5,15 @@ export const AppContainer = styled.div`
   flex-direction: column;
   min-height: 100vh;
   width: 100vw;
+  /* border: 1px solid red; */
+  
+  background: linear-gradient(180deg,
+    ${ ({theme}) => theme.COLORS.LINEAR_1 } 0%, 
+    ${ ({theme}) => theme.COLORS.LINEAR_2 } 04%, 
+    ${ ({theme}) => theme.COLORS.LINEAR_3 } 50%,
+    ${ ({theme}) => theme.COLORS.LINEAR_4 } 85%,
+    ${ ({theme}) => theme.COLORS.LINEAR_5 } 100%);
 `;
-
 interface Props {
   locate: {
     x:number,

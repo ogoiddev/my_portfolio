@@ -6,6 +6,8 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
+    max-width: 1937px;
     /* border: 1px solid red; */
   }
   
@@ -42,5 +44,6 @@ export default createGlobalStyle`
     width: 100vw;
     overflow-x: hidden;
     height: fit-content;
+  
   }
-  `
+`

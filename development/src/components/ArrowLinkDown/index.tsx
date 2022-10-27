@@ -37,7 +37,7 @@ const ArrowDownContainer = styled.div`
 export default function ArrowLinkDown() {
   return (
     <ArrowDownContainer>
-      <CaretDoubleDown weight="regular" className="arrowDown" size={40}/>
+      <CaretDoubleDown weight="regular" className="arrowDown" size={24}/>
     </ArrowDownContainer>
   );
 }

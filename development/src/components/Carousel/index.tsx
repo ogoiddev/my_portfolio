@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback, ReactNode } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { Thumb } from "./Thumb";
-import { linkByIndex, mediaByIndex } from "./medias";
-import CarouselContainer from "./embla";
+import { articleByIndex, linkByIndex, mediaByIndex } from "./medias";
+import { CarouselArticle, CarouselContainer } from "./embla";
 
 
 import EmblaCarousel, {
@@ -54,8 +54,8 @@ export const Carousel = (props: PropType) => {
         <div className="embla ">
           <div className="embla__viewport" ref={mainViewportRef}>
             <div className="embla__container">
-              {slides.map((index, i) => (
-                <div className="embla__slide" key={i}>
+              {slides.map((index) => (
+                <div className="embla__slide" key={index}>
                   <div  className="embla__slide__inner">
                     <a href={linkByIndex(index)} target='_blank' className="link">
                       <img
@@ -74,18 +74,26 @@ export const Carousel = (props: PropType) => {
         <div className="embla embla--thumb">
           <div className="embla__viewport" ref={thumbViewportRef}>
             <div className="embla__container embla__container--thumb">
-              {slides.map((index, i) => (
+              {slides.map((index) => (
                 <Thumb
                 onClick={() => onThumbClick(index)}
                 selected={index === selectedIndex}
                 imgSrc={mediaByIndex(index)}
-                key={i}
+                key={index}
                 />
                 ))}
             </div>
           </div>
         </div>
-      
+      <CarouselArticle>
+        <h3>Description:</h3>
+
+        <div className="content">
+          <p>{articleByIndex(selectedIndex)}</p>
+        </div>
+        
+
+      </CarouselArticle>
     </CarouselContainer>
   );
 };

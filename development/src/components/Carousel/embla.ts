@@ -1,11 +1,38 @@
 import styled from 'styled-components';
 
 
-const CarouselContainer = styled.div`
+export const CarouselArticle = styled.div`
+  background: ${props => props.theme.COLORS.GRAY_BLACK};
+  width: 100%;
+  height: 380px;
+
+  padding: 20px;
+
+  h3 {
+    color: white;
+    margin: 8px 0;
+  }
+
+  .content {
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6rem;
+      color: ${props => props.theme.COLORS.CAROUSEL_TEXT};
+    }
+  }
+`
+
+export const CarouselContainer = styled.div`
   display: flex;
   width: 70%;
-  max-height: 70vh;
+  max-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
   
+  margin-top: 104px;
+
   .embla {
     position: relative;
     background-color: transparent;
@@ -15,9 +42,10 @@ const CarouselContainer = styled.div`
   .embla:first-child {
     padding: 38px 0;
     margin: 16px 0;
-    background: #11111150;
+    background: ${props => props.theme.COLORS.GRAY_BLACK}25;
     min-height: 350px;
-    max-height: 45vh;
+    max-height: 65vh;
+    min-height: 460px;
     
     :hover {
       transform: translate(-1px, -1px);
@@ -75,7 +103,7 @@ const CarouselContainer = styled.div`
   
   
   .embla__slide__inner {
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     position: relative;
     
@@ -90,6 +118,7 @@ const CarouselContainer = styled.div`
     left: 50%;
     max-width: 100%;
     max-height: 100%;
+    height: 96%;
     transform: translate(-50%, -50%);
   }
   
@@ -122,11 +151,11 @@ const CarouselContainer = styled.div`
     }
 
     :hover:after {
-      border: 1px solid ${props => props.theme.COLORS.BLUE_LIGHT};
+      border: 1px solid ${props => props.theme.COLORS.TEXT_HOVER};
       filter: brightness(1.2);
       width: 92%;
       height: 2px;
-      background: ${props => props.theme.COLORS.BLUE_LIGHT};
+      background: ${props => props.theme.COLORS.TEXT_HOVER};
 
       opacity: 1 !important;
       
@@ -152,6 +181,7 @@ const CarouselContainer = styled.div`
       background: none !important;
       
     }
+    
   }
   
   .embla__slide__thumbnail {
@@ -179,9 +209,7 @@ const CarouselContainer = styled.div`
   }
 
   .embla__slide--thumb.is-selected:after {
-    border: 1px solid ${props => props.theme.COLORS.BLUE_LIGHT};
+    border: 1px solid ${props => props.theme.COLORS.TEXT_HOVER};
     width: 92%;
   }
 `
-
-export default CarouselContainer;

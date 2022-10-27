@@ -17,7 +17,7 @@ export default function Header() {
         <div className='theme' onClick={ () => setTheme(!theme) } >
           { theme
             ? <SunDim size={32} weight="fill" color={ light.COLORS.BLUE_LIGHT } /> 
-            : <Moon size={32} weight="fill" color={ dark.COLORS.BLUE_LIGHT } /> }
+            : <Moon size={32} weight="fill" color={ light.COLORS.TEXT_ACCENT } /> }
         </div>
 
 

@@ -1,11 +1,17 @@
 import ArrowLinkUp from "../ArrowLinkUp";
 import Skills from "../Skills";
-import { MyCodeContainer } from "./styles";
+import { FooterPage, MyCodeContainer } from "./styles";
+import { Carousel } from '../Carousel';
+
+const SLIDE_COUNT = 10;
+const slides = Array.from(Array(SLIDE_COUNT).keys());
 
 
 export default function MyCode() {
   return (
     <MyCodeContainer id='code'>
+      <Carousel class='carousel' slides={slides}/>
+
       <div className="arrow-code-position">
         <a href='#projects'>
           <ArrowLinkUp/>
@@ -18,6 +24,9 @@ export default function MyCode() {
       </div>
       <Skills/>
 
+      <FooterPage>
+        <div className="content"/>
+      </FooterPage>
     </MyCodeContainer>
   );
 }

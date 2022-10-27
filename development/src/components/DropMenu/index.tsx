@@ -17,11 +17,6 @@ export default () => (
         <Label>Links</Label>
 
         <Group >
-          <a href='#hall'  className='link-a'>
-            <Item onSelect={(e) => e.preventDefault()}>
-              Esse sou eu
-            </Item>
-          </a>
           <a href='#projects' className='link-a'>
             <Item onSelect={(e) => e.preventDefault()}>
               Projects
@@ -37,7 +32,7 @@ export default () => (
               Como posso ajudar?
             </Item>
           </a>
-          <a href="Diogo_Martini_resume.pdf" target="_blank" download className='link-a resume'>
+          <a href="./curriculo_resume_ogoiddev_13-10-22.pdf" target="_blank" download className='link-a resume'>
             <Item onSelect={(e) => e.preventDefault()}>
               CURRÍCULO
             </Item>
