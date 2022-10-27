@@ -33,12 +33,12 @@ export const NavbarContainer = styled.div`
     :after {
       content: '';
       width: 0;
-      height: 1px;
+      height: 4px;
       display: block;
       background: ${props => props.theme.COLORS.BLUE_LIGHT};
       transition: 400ms;
       position: absolute;
-      bottom: 0;
+      top: 0;
       transition: 0.3s ease-out;
 
     }
@@ -46,10 +46,11 @@ export const NavbarContainer = styled.div`
       color: ${props => props.theme.COLORS.BLUE_LIGHT}
     }
 
-    :hover:after {
-      width: 90%;
-    }
+    :hover:after::focus {
+      width: 100%;
 
+    }
+      
     :active {
       transform: translate(1px, 1px);
       border-radius: 4px;
