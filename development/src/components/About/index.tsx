@@ -1,4 +1,4 @@
-import { AboutContainer } from "./styles";
+import { AboutContainer, LinkA } from "./styles";
 import { useContext } from 'react';
 import { UserThemeContext } from "../../context/UserThemeContext";
 
@@ -12,15 +12,18 @@ export default function About() {
         <aside >
           <h3 >Connect with me:</h3>
           <div>
-            <a href="https://linkedin.com/in/ogoiddev" target="blank">
+            <LinkA id="Linkedin" href="https://linkedin.com/in/ogoiddev" target="blank">
               <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="ogoiddev" height="50" width="60" />
-            </a>
-            <a href="https://stackoverflow.com/users/20027746" target="blank">
+            </LinkA>
+            <LinkA id="Stack Overflow" href="https://stackoverflow.com/users/20027746" target="blank">
               <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="20027746" height="50" width="60" />
-            </a>
-            <a href="https://github.com/ogoiddev" target="blank" >
+            </LinkA>
+            <LinkA id="GitHub" href="https://github.com/ogoiddev" target="blank" >
               <img src={ theme ? "./GitHub-Mark-Light-120px-plus.png" : "./github_black.png"} alt="github profile" height="50" />
-            </a>
+            </LinkA>
+            <LinkA id="Code Wars" href="https://www.codewars.com/users/ogoiddev" target="blank" >
+              <img src="https://www.codewars.com/packs/assets/logo.61192cf7.svg" alt="code war profile" height="50" />
+            </LinkA>
           </div>
         </aside>
 

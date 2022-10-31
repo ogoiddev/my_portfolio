@@ -76,25 +76,7 @@ export const AboutContainer = styled.div`
       
       div {
         display: flex;
-
-        a {
-          margin: 16px 8px;
-          flex: 1;
-          border: 1px solid transparent;
-          
-          :hover {
-            transition: all 0.3s;
-            border-radius: 8px;
-            border: 1px solid ${ ({theme}) => theme.COLORS.TEXT_HOVER };
-          }
         
-          img {
-            width: 32px;
-            height: 32px;
-            margin: 8px;
-            fill: black;
-          }
-        }
       }
     }
 
@@ -117,3 +99,56 @@ export const AboutContainer = styled.div`
     
 
 }`
+
+export const LinkA = styled.a.attrs((propsA) => propsA)`
+
+  margin: 16px 8px;
+  flex: 1;
+  border: 1px solid transparent;
+  position: relative;
+
+  :after {
+    content: '';
+    font-weight: 800;
+    color: ${({ theme }) => theme.COLORS.TEXT_HOVER};
+
+    width: 0;
+    height: 0;
+    background: transparent;
+
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    white-space: nowrap;
+    padding: 4px 8px;
+
+    
+  }
+  
+  :hover {
+    transition: all 0.3s;
+    border-radius: 8px;
+    border: 1px solid ${ ({ theme }) => theme.COLORS.TEXT_HOVER };
+    
+  }
+
+  :hover:after {
+    transition: all 0.3s;
+    content: "${ propsA => propsA.id }";
+
+    width: fit-content;
+    height: fit-content;
+
+    background: ${({theme}) => theme.COLORS.PRIMARY};
+
+
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    fill: black;
+  }
+        
+`
