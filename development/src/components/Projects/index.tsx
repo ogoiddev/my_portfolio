@@ -7,7 +7,7 @@ export default function Projects() {
     <ProjectsContainer id='projects'>
       <ProjectsContent>
         <p>
-          Dei início a um projeto profissional com um plano de carreira em julho de 2021.
+          Dei início a um projeto de vida, com um plano de carreira em julho de 2021.
           Tenho o objetivo de me tornar um desenvolvedor web pleno e construir uma carreira sólida.
           <br />
           <br />
